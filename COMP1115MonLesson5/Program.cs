@@ -82,3 +82,49 @@ switch (difficulty)
 }
 
 Console.WriteLine($"Difficulty: {difficulty} - {pointsMultiplier}x - Points Multiplier");
+
+
+// Debug Exercise
+Console.Write("Enter your quiz score (0-100): ");
+
+double QuizScore = double.Parse(Console.ReadLine());
+
+if (QuizScore > 74)
+{
+    Console.WriteLine("You did well");
+}
+
+else if (QuizScore > 50)
+{
+    Console.WriteLine("You did ok");
+}
+
+else 
+{
+    Console.WriteLine("You need some help");
+}
+
+string grade;
+
+if (QuizScore >= 90)
+{
+  grade = "A";
+}
+else if (QuizScore >= 80)
+{
+   grade = "B";
+}
+else if (QuizScore >= 70)
+{
+   grade = "C";
+}
+else if (QuizScore >= 60)
+{
+   grade = "D";
+}
+else
+{
+   grade = "F";
+}
+
+Console.WriteLine("Your grade: " + grade);
